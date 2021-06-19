@@ -1,0 +1,94 @@
+@import url("https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+.App {
+  font-family: sans-serif;
+  /* text-align: center; */
+}
+h1 {
+  font-family: "Indie Flower", cursive;
+  font-weight: bolder;
+  font-size: 50px;
+  text-align: center;
+}
+body {
+  background-image: linear-gradient(to right, #aeff0c, #5ffa00);
+  /* background-color: #5FFA00 */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+input {
+  width: 275px;
+  padding: 5px 20px;
+  margin: 7px 0px;
+  border-radius: 3px;
+  margin-bottom: 32px;
+  /* height:20px; */
+  /* padding: 10px 20px; */
+  /* width: 100% */
+  text-align: center;
+}
+form {
+  width: 100%;
+}
+input::placeholder {
+  color: #e2e2e2;
+}
+.addButton {
+  padding: 5px 10px;
+  /* margin: 7px 0px; */
+  /* border-radius: 3px; */
+  /* padding: 5px; */
+  /* border: none; */
+  border-radius: 0 4px 4px 0;
+  cursor: pointer;
+  outline: none;
+  background: linear-gradient(
+    90deg,
+    rgba(93, 12, 255, 1) 0%,
+    rgba(155, 0, 250, 1) 100%
+  );
+  color: #fff;
+  text-transform: capitalize;
+}
+li {
+  display: list-item;
+  list-style-position: inside;
+  padding: 5px 20px;
+  margin: 7px 0;
+  border-radius: 3px;
+  background-color: #eeeeee;
+  border: 1px solid #dddddd;
+  justify-content: space-between;
+  /* width: 100%; */
+  font-family: "Roboto", sans-serif;
+  max-width: 500px;
+}
+ol {
+  padding: 0;
+}
+.addItem {
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  align-items: center;
+  text-align: center;
+}
+.deleteButton {
+  float: right;
+}
+p {
+  font-family: "Roboto", sans-serif;
+}
+@media (max-width: 510px) {
+  li {
+    min-height: 30px;
+  }
+}
+@media (max-width: 400px) {
+  li {
+    min-height: 25px;
+  }
+}
